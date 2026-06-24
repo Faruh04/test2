@@ -24,90 +24,52 @@ public  class Main {
 
             switch(option){ //To choose
 
-                case 1:
+                            case 1:
 
-                    System.out.println("Balance: " + balance + "$"); // Show balance
+                                System.out.println("Balance: " + balance + "$"); // Show balance
 
-                break;
-
-
-
-                case 2:
-
-                    System.out.println("Write how much you want to add! \n \n");
-                    float depo = scanner.nextFloat();
-                    balance =+ depo; // to add to balance
-                    System.out.println("Your balance after adding money: " + balance + "$");
-
-                break;
+                            break;
 
 
 
-                case 3:
+                            case 2:
+
+                                    System.out.println("Write how much you want to add! \n \n");
+                                    float depo = scanner.nextFloat();
+                                    balance = balance + depo; // to add to balance
+                                    System.out.println("Your balance after adding money: " + balance + "$");
+
+                            break;
 
 
+
+                            case 3:
+
+                                    System.out.println("Write your withdraw: ");
+                                    float withdraw = scanner.nextFloat();
+
+                                        if(withdraw > balance){
+
+                                            System.out.println("Sorry, you dont have enough money!");
+
+                                        }
+                                        else {
+
+                                            balance = balance - withdraw;
+                                            System.out.println("Your balance after withdraw: " + balance + "$");
+
+                                        }
+                            break;
+
+
+                            case 4:
+
+                                        System.out.println("Have a nice day!");
+                                        scanner.close();
+
+                            return;
 
             }
-
-
-
-
         }
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
     }
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 }
