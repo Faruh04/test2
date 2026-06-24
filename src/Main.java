@@ -19,16 +19,31 @@ public  class Main {
 
             System.out.println("Choose your option: ");
             int option = scanner.nextInt();
-            scanner.nextLine();
+            scanner.nextLine(); // if there any letters
 
 
-            switch(option){
+            switch(option){ //To choose
 
                 case 1:
-                    System.out.println("Balance: " + balance + "$");
+
+                    System.out.println("Balance: " + balance + "$"); // Show balance
+
+                break;
 
 
 
+                case 2:
+
+                    System.out.println("Write how much you want to add! \n \n");
+                    float depo = scanner.nextFloat();
+                    balance =+ depo; // to add to balance
+                    System.out.println("Your balance after adding money: " + balance + "$");
+
+                break;
+
+
+
+                case 3:
 
 
 
