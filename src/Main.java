@@ -1,13 +1,98 @@
-//TIP To <b>Run</b> code, press <shortcut actionId="Run"/> or
-// click the <icon src="AllIcons.Actions.Execute"/> icon in the gutter.
-void main() {
-    //TIP Press <shortcut actionId="ShowIntentionActions"/> with your caret at the highlighted text
-    // to see how IntelliJ IDEA suggests fixing it.
-    IO.println(String.format("Hello and welcome!"));
+import java.util.Scanner;
 
-    for (int i = 1; i <= 5; i++) {
-        //TIP Press <shortcut actionId="Debug"/> to start debugging your code. We have set one <icon src="AllIcons.Debugger.Db_set_breakpoint"/> breakpoint
-        // for you, but you can always add more by pressing <shortcut actionId="ToggleLineBreakpoint"/>.
-        IO.println("i = " + i);
+public  class Main {
+    public static void main(String[] args){
+
+        float balance = 123123.123f;
+
+        while (true){
+
+
+            Scanner scanner = new Scanner(System.in);
+
+
+            System.out.println("Welcome to ATM by Faruh \n \n");
+            System.out.println("1.Check balance");
+            System.out.println("2.Deposite");
+            System.out.println("3.Withdraw");
+            System.out.println("4.Exit \n \n");
+
+            System.out.println("Choose your option: ");
+            int option = scanner.nextInt();
+            scanner.nextLine();
+
+
+            switch(option){
+
+                case 1:
+                    System.out.println("Balance: " + balance + "$");
+
+
+
+
+
+
+            }
+
+
+
+
+        }
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
     }
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 }
